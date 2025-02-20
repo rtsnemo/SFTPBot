@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot", "TelegramBot\TelegramBot.csproj", "{586448B6-4708-4159-A732-3A0B1DD48929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot.Application", "TelegramBot.Application\TelegramBot.Application.csproj", "{83DDC864-1F9E-47FD-A851-F979E0DE2EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot.Domain", "TelegramBot.Domain\TelegramBot.Domain.csproj", "{456206A8-9F80-472C-9B8A-7B929F9F13B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586448B6-4708-4159-A732-3A0B1DD48929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586448B6-4708-4159-A732-3A0B1DD48929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586448B6-4708-4159-A732-3A0B1DD48929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586448B6-4708-4159-A732-3A0B1DD48929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DDC864-1F9E-47FD-A851-F979E0DE2EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DDC864-1F9E-47FD-A851-F979E0DE2EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DDC864-1F9E-47FD-A851-F979E0DE2EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DDC864-1F9E-47FD-A851-F979E0DE2EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456206A8-9F80-472C-9B8A-7B929F9F13B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456206A8-9F80-472C-9B8A-7B929F9F13B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456206A8-9F80-472C-9B8A-7B929F9F13B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456206A8-9F80-472C-9B8A-7B929F9F13B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F52FAB7-D61C-466D-B7D8-90DF7CE99FCE}
+	EndGlobalSection
+EndGlobal
