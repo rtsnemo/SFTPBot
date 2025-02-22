@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  telegrambot:
+    image: ${DOCKER_REGISTRY-}telegrambot
+    build:
+      context: .
+      dockerfile: TelegramBot/Dockerfile
