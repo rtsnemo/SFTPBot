@@ -1,4 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
+using TelegramBot.Api.Services;
+using TelegramBot.Application.Handlers;
+using TelegramBot.Application.Interfaces;
+using TelegramBot.Application.Services;
+using TelegramBot.Configurations;
+using TelegramBot.Data;
+using TelegramBot.Data.Interfaces;
 
 namespace TelegramBot
 {
@@ -8,32 +16,21 @@ namespace TelegramBot
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            var config = builder.Configuration;
-            builder.Services.AddSingleton<ITelegramBotClient>(provider =>
-    new TelegramBotClient(config["TelegramBot:Token"]));
-
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            StartupConfiguration.ConfigureServices(builder);
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            MigrationManager.ApplyMigrations(app);
+/*
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            }*/
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }
